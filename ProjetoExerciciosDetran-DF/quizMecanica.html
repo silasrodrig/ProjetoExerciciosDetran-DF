@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Questões Detran-DF</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+	<!-- TELA INICIAL --> 
+	<div class="home-box custom-box">
+		<h3>Mecânica:</h3>
+		<p>Número total de Perguntas: <span class="total-question"></span></p>
+		<button type="button" class="btn" onclick="startQuiz()">Iniciar Questionário</button>
+		<a href="index.html"><button type="button" class="btn2">Retornar Índice</button></a>
+	</div>
+
+
+
+
+<!-- TELA DE PERGUNTAS E RESPOSTAS --> 
+	<div class="quiz-box custom-box hide">
+		<div class="question-number">
+			
+		</div>
+		<div class="question-text">
+			
+		</div>
+		<div class="option-container">
+
+		</div>
+		<div class="next-question-btn">
+			<button type="button" class="btn" onclick="next()">Próximo</button>
+		</div>
+		<div class="answers-indicator">
+
+		</div>
+
+	</div>
+
+
+	<!-- TELA DE RESULTADOS -->
+
+	<div class="result-box custom-box hide">
+		<h1>Resultado do Questionário</h1>
+		<table>
+			<tr>
+				<td>Total de Questões</td>
+				<td><span class="total-question"></span></td>
+			</tr>
+			<tr>
+				<td>Respondidas</td>
+				<td><span class="total-attempt"></span></td>
+			</tr>
+			<tr>
+				<td>Corretas</td>
+				<td><span class="total-correct"></span></td>
+			</tr>
+			<tr>
+				<td>Erradas</td>
+				<td><span class="total-wrong"></span></td>
+			</tr>
+			<tr>
+				<td>Porcentagem de acerto</td>
+				<td><span class="percentage"></span></td>
+			</tr>
+			<tr>
+				<td>Pontuação total</td>
+				<td><span class="total-score"></span></td>
+			</tr>
+		</table>
+		<button type="button" class="btn" onclick="tryAgainQuiz()">Tentar Novamente</button>
+		<a href="quiz.html"><button type="button" class="btn">Retornar Índice</button></a>
+	</div>
+<script src="listasExercicios/mecanica/js/question_Mecanica.js"></script>
+<script src="listasExercicios/mecanica/js/app.js"></script>
+</body>
+</html>
+
+
